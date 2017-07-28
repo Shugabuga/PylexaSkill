@@ -30,15 +30,15 @@ def handle_info_intent(request):
 @handle_intent('A')
 @handle_launch_request
 def handle_start_message(request):
-    try:
-        print("New launch!")
-        # get rounded BTC value
-        btcValue = exec(str(os.environ['ENDPOINT']))
-        print(btcValue)
-        # /get rounded BTC value
-        return PlainTextSpeech(str(os.environ['BEFORE']) + " " + btcValue + " " + str(os.environ['AFTER']))
-    except:
-        return PlainTextSpeech("I don't know.")
+    # try:
+    print("New launch!")
+    # get rounded BTC value
+    btcValue = exec(str(os.environ['ENDPOINT']))
+    print(btcValue)
+    # /get rounded BTC value
+    return PlainTextSpeech(str(os.environ['BEFORE']) + " " + btcValue + " " + str(os.environ['AFTER']))
+    # except:
+    #     return PlainTextSpeech("I don't know.")
 
 if __name__ == '__main__':
     app.run(debug=True)
