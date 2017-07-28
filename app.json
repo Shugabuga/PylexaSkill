@@ -1,0 +1,21 @@
+{
+  "name": "PylexaSkill",
+  "description": "An example Amazon Alexa skill using Python and Pylexa.",
+  "repository": "https://github.com/Shugabuga/PylexaSkill",
+  "logo": "https://shuga.co/assets/donate/btc.png",
+  "keywords": ["python", "requests", "pylexa", "alexa", "echo"],
+  "env": {
+    "ENDPOINT": {
+      "description": "This is the bit of code that will get the API response.",
+      "value": "requests.get('http://api.coindesk.com/v2/bpi/currentprice.json').json()['bpi']['USD']['rate']"
+    },
+    "BEFORE": {
+      "description": "The part that would be said before Alexa says the API response.",
+      "value": "Bitcoin is worth around"
+    },
+    "AFTER": {
+      "description": "The part that would be said after Alexa says the API response.",
+      "value": "dollars."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "BTC",
+          "type": "CURRENCY"
+        }
+      ],
+      "intent": "GetBTC"
+    }
+  ]
+}
