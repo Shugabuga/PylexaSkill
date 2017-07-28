@@ -1,1 +1,1 @@
-pylexaskill: gunicorn echo.app:app
+web: gunicorn echo.app:app
