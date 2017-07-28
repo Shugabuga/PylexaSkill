@@ -11,11 +11,7 @@ To link the skill with Heroku, use the button below and fill out the variables:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-Once you do this, go to your app, and do the following:
-
-- Note the app URL. You will need this later.
-
-- In `Overview`, go to `Configure Dynos`, then click the pencil icon (edit), toggle the switch, and click `Confirm`.
+Once you do this, go to your app, and note the app URL. You will need this later.
 
 After this is done, you need to log in to your Amazon account and go  [here](https://developer.amazon.com/edw/home.html#/). After this is done, click `Get Started` under `Alexa Skills Kit`, click `Add a New Skill`, and fill in information under `Interaction Model` with info from the `/conf/` folder in this repository, then click Next.
 
