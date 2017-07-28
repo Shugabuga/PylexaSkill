@@ -22,7 +22,7 @@ def handle_info_intent(request):
         btcValue = exec(str(os.environ['ENDPOINT']))
         print(btcValue)
         # /get rounded BTC value
-        return PlainTextSpeech(str(os.environ['BEFORE']) + " " + btcValue + " " + str(os.environ['AFTER']))
+        return PlainTextSpeech(str(os.environ['BEFORE']) + " " + str(btcValue) + " " + str(os.environ['AFTER']))
     except:
         return PlainTextSpeech("I don't know.")
 
@@ -36,7 +36,7 @@ def handle_start_message(request):
     btcValue = exec(str(os.environ['ENDPOINT']))
     print(btcValue)
     # /get rounded BTC value
-    return PlainTextSpeech(str(os.environ['BEFORE']) + " " + btcValue + " " + str(os.environ['AFTER']))
+    return PlainTextSpeech(str(os.environ['BEFORE']) + " " + str(btcValue) + " " + str(os.environ['AFTER']))
     # except:
     #     return PlainTextSpeech("I don't know.")
 
